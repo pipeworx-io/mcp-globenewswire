@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-globenewswire",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "GlobeNewswire MCP — press releases from GlobeNewswire's public-company feed.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-5545e5f0d03ca4f46085fb3ae4aafeb0b36948110b2ebd68b4fd60ca0945100c",
-    "sourceCommit": "1064560fd9dcd0d6fc2606298c2ba244b3a1fbeb"
+    "sourceHash": "v1-78dc81f4feffe00f8b42343ea1a140345e4241154d463be804d44fa1a0dbe784",
+    "sourceCommit": "445bacc5596a845c12d6945fbfcdf330ef60dcc4"
   }
 }
