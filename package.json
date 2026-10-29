@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-globenewswire",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "GlobeNewswire MCP — press releases from GlobeNewswire's public-company feed.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-globenewswire": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "globenewswire"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-globenewswire.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/globenewswire",
   "pipeworx": {
-    "sourceHash": "v1-78dc81f4feffe00f8b42343ea1a140345e4241154d463be804d44fa1a0dbe784",
-    "sourceCommit": "445bacc5596a845c12d6945fbfcdf330ef60dcc4"
+    "mode": "gateway",
+    "slug": "globenewswire",
+    "gatewaySlug": "globenewswire",
+    "sourceHash": "v1-8ec3069f360b76dd4ebaf615540b1dc160c7ff8f81dcdc114ade393cc0f16e90",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
